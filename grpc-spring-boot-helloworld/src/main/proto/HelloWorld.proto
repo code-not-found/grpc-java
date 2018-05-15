@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package com.codenotfound.grpc.helloworld;
+
+message Person {
+  string first_name = 1;
+  string last_name = 2;
+}
+
+message Greeting {
+  string message = 1;
+}
+
+service HelloWorldService {
+  rpc sayHello (Person) returns (Greeting);
+}
