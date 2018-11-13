@@ -3,11 +3,9 @@ package com.codenotfound.grpc.server;
 import org.lognet.springboot.grpc.GRpcService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.codenotfound.grpc.helloworld.Greeting;
 import com.codenotfound.grpc.helloworld.HelloWorldServiceGrpc;
 import com.codenotfound.grpc.helloworld.Person;
-
 import io.grpc.stub.StreamObserver;
 
 @GRpcService

@@ -1,15 +1,12 @@
 package com.codenotfound.grpc.client;
 
 import javax.annotation.PostConstruct;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
 import com.codenotfound.grpc.helloworld.Greeting;
 import com.codenotfound.grpc.helloworld.HelloWorldServiceGrpc;
 import com.codenotfound.grpc.helloworld.Person;
-
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
@@ -41,5 +38,4 @@ public class HelloWorldClient {
 
     return greeting.getMessage();
   }
-
 }
