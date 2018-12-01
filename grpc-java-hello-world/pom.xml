@@ -10,7 +10,7 @@
 
   <name>grpc-java-hello-world</name>
   <description>gRPC Java Example</description>
-  <url>https://www.codenotfound.com/grpc-java-example.html</url>
+  <url>https://codenotfound.com/grpc-java-example.html</url>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -23,19 +23,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
-
-    <grpc-spring-boot-starter.version>2.4.3</grpc-spring-boot-starter.version>
-
+    <grpc-spring-boot-starter.version>3.0.0</grpc-spring-boot-starter.version>
     <os-maven-plugin.version>1.6.1</os-maven-plugin.version>
     <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
   </properties>
-
-  <repositories>
-    <repository>
-      <id>jcenter</id>
-      <url>https://jcenter.bintray.com/</url>
-    </repository>
-  </repositories>
 
   <dependencies>
     <dependency>
@@ -43,11 +34,10 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.lognet</groupId>
+      <groupId>io.github.lognet</groupId>
       <artifactId>grpc-spring-boot-starter</artifactId>
       <version>${grpc-spring-boot-starter.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
@@ -57,20 +47,17 @@
 
   <build>
     <extensions>
-      <!-- os-maven-plugin -->
       <extension>
         <groupId>kr.motd.maven</groupId>
         <artifactId>os-maven-plugin</artifactId>
         <version>${os-maven-plugin.version}</version>
       </extension>
     </extensions>
-
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
-      <!-- protobuf-maven-plugin -->
       <plugin>
         <groupId>org.xolstice.maven.plugins</groupId>
         <artifactId>protobuf-maven-plugin</artifactId>
