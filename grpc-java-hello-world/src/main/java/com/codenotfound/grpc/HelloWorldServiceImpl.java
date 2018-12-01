@@ -1,4 +1,4 @@
-package com.codenotfound.grpc.server;
+package com.codenotfound.grpc;
 
 import org.lognet.springboot.grpc.GRpcService;
 import org.slf4j.Logger;

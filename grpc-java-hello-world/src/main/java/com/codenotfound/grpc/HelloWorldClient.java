@@ -1,4 +1,4 @@
-package com.codenotfound.grpc.client;
+package com.codenotfound.grpc;
 
 import javax.annotation.PostConstruct;
 import org.slf4j.Logger;
